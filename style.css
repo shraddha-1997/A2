@@ -1,11 +1,11 @@
-html,
+
 body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
   /* Prevent horizontal scrolling */
   font-size: medium;
-   
+
 }
 
 .dashboard {
@@ -44,20 +44,24 @@ body {
 
 
 .btn-light {
-  padding: 2px 5px; /* Reduces padding inside each button */
-  margin: 0 2px; /* Reduces space between buttons */
+  padding: 2px 5px;
+  /* Reduces padding inside each button */
+  margin: 0 2px;
+  /* Reduces space between buttons */
 }
 
 .iconimg {
-  width: 18px;/* Adjust the size of the icon */
-  height: 18px;/* Adjust the size of the icon */
+  width: 18px;
+  /* Adjust the size of the icon */
+  height: 18px;
+  /* Adjust the size of the icon */
 }
 
-.main-content{
-    margin-top: 10px;
+.main-content {
+  margin-top: 10px;
 }
 
-.main-title{
+.main-title {
   margin-top: 35px;
   margin-bottom: 25px;
 }
@@ -66,40 +70,62 @@ body {
 
 /* The tooltip text container */
 .tooltip-text {
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 12px;
   color: gray;
-  pointer-events: none; /* Prevent tooltip from blocking input field */
+  pointer-events: none;
+  /* Prevent tooltip from blocking input field */
   margin-top: 30px;
 }
 
 /* When the input is hovered, show the tooltip */
-#exampleInputEmail1:hover + .tooltip-text {
+#exampleInputEmail1:hover+.tooltip-text {
   display: block;
 }
 
 .tooltip-text {
-  display: none; /* Initially hidden */
+  display: none;
   position: absolute;
   left: 20px;
   margin-top: 15px;
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
-  font-size: 14px; /* Slightly larger font size */
+  font-size: 14px;
   color: gray;
-  pointer-events: none; /* Prevent tooltip from blocking input field */
-  /* white-space: pre-line; Respect line breaks */
+  pointer-events: none;
 }
 
-/* When the input is hovered, show the tooltip */
-#exampleInputEmail1:hover + .tooltip-text {
-  display: block;
+.btn-bs{
+  height: 40px;
+  border: none;
 }
 
+.pagination .page-link {
+  border-radius: 100%;
+  padding: 5px 10px;
+  margin: 0 10px; 
+  font-size: 13px; 
+  text-align: center;
+  color: black;
+ 
+}
+
+
+.pagination .page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination .page-link {
+  border: none;
+}
+
+.pagination {
+  display: flex;
+}
 
 
 
@@ -107,29 +133,29 @@ body {
 
 /* PHONE  */
 @media screen and (max-width: 576px) {
- 
+
   .side-bar {
     max-width: 250px;
     padding-left: 10px;
   }
 
 
-  /* Adjust the toggle button icon size */
   .navbar-toggler-icon {
     width: 15px;
     height: 15px;
-   
+
   }
 
   .dis-img {
 
     height: 220px;
     width: 220px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 90px;
+    justify-content: center;
+    /* margin-top: 30px;
+    margin-bottom: 30px;*/
+    margin-left: 50px; 
   }
-  
+
 
   #logo {
     padding-top: 10px;
@@ -138,6 +164,44 @@ body {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .mobile-hidden{
+    display: none;
+  }
+
+  
+  .tag {
+    font-size: 10px;
+    padding: 4PX 4PX;
+    border-radius: 10%;
+    background-color: rgb(228, 204, 228);
+    color: #A061F7
+  }
+
+  .plus {
+    background-color: rgb(226, 226, 226);
+    color: gray;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 4PX 4PX;
+  }
+
+  .plus:hover {
+    cursor: pointer;
+    background-color: #8420cc;
+    /* Dark purple on hover */
+    color: white;
+    /* Changes text color to white when hovered */
+  }
+  
+
+  .tool-text {
+    font-size: 12px;
+    /* Slightly larger font size */
+    color: gray;
+    pointer-events: none;
+  }
+
 
 
 }
@@ -172,26 +236,66 @@ body {
 
     height: 200px;
     width: 200px;
-    margin-top: 30px;
-    margin-left: 150px;
-    padding-bottom: 10px;
+    /* margin-top: 30px;
+    margin-left: 110px; 
+    padding-bottom: 10px;*/
   }
 
   .written {
     padding-bottom: 70px;
   }
 
-   
-.btn.md-margin{
-  margin-left: 160px;
-}
+
+  .btn.md-margin {
+    margin-left: 160px;
+  }
 
   #logo {
     padding-top: 10px;
     margin-top: 10px;
     width: 100%;
-    height:50px ;
+    height: 50px;
   }
+
+  
+.mobile-hidden{
+  display: none;
+}
+
+
+.tag {
+  font-size: 10px;
+  padding: 4PX 4PX;
+  border-radius: 10%;
+  background-color: rgb(228, 204, 228);
+  color: #A061F7
+}
+
+.plus {
+  background-color: rgb(226, 226, 226);
+  color: gray;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 4PX 4PX;
+}
+
+.plus:hover {
+  cursor: pointer;
+  background-color: #8420cc;
+  /* Dark purple on hover */
+  color: white;
+  /* Changes text color to white when hovered */
+}
+
+
+
+.tool-text {
+  font-size: 12px;
+  /* Slightly larger font size */
+  color: gray;
+  pointer-events: none;
+}
+
 
 
 }
@@ -203,7 +307,7 @@ body {
 
 
 /* TABLET   */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .dis-img {
     border-radius: 50%;
     height: 230px;
@@ -212,18 +316,70 @@ body {
     margin-left: 40px;
   }
 
+
+  #logo {
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .main-title {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
   
-#logo {
-  padding-top: 10px;
-  margin-top: 10px;
-}
+  .cor {
+    width: 50px;
+    height: 50px;
+  }
 
-.main-title{
-  padding-top: 20px;
-  padding-left: 50px;
-}
+  .text{
+    font-size: 15px;
+  }
+  
+  
+  .tag {
+    font-size: 10px;
+    padding: 4PX 4PX;
+    border-radius: 10%;
+    background-color: rgb(228, 204, 228);
+    color: #A061F7
+  }
 
+  .plus {
+    background-color: rgb(226, 226, 226);
+    color: gray;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 4PX 4PX;
+  }
 
+  .plus:hover {
+    cursor: pointer;
+    background-color: #8420cc;
+    /* Dark purple on hover */
+    color: white;
+    /* Changes text color to white when hovered */
+  }
+
+  
+
+  .tool-text {
+    font-size: 12px;
+    /* Slightly larger font size */
+    color: gray;
+    pointer-events: none;
+  }
+
+  .ac{
+    padding-left: 42px;
+  }
+
+  .mlg-hidden{
+    display: none;
+  }
+  
+  
 
 }
 
@@ -244,49 +400,100 @@ body {
 
 /* LAPTOP/ DESKTOPS */
 @media screen and (min-width: 992px) {
-    main-content {
+  main-content {
 
-        /* height: 30px; */
-        width: 1400px;
-        margin-top: 10px;
-        margin-left: 30px;
-      }
+    /* height: 30px; */
+    width: 1400px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
 
-      
+
   #logo {
     padding-top: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 0px;
+    /* padding-left: 50px;
+    padding-right: 0px; */
+    margin-left: 0px;
   }
 
-  .navbar{
+  .navbar {
     margin-left: -45px;
   }
-    
-.navbar-brand{
-  font-weight: 600;
+
+  .navbar-brand {
+    font-weight: 600;
+  }
+
+  .dis-img {
+    border-radius: 50%;
+    height: 160px;
+    width: 100%;
+  }
+
+
+  .dis-img {
+    border-radius: 50%;
+    height: 120px;
+    width: 130Px;
+    margin-top: 30px;
+  }
+
+
+  .hea {
+    margin-top: -3px;
+    margin-bottom: 20px;
+  }
+
+
+
+  .cor {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sum {
+    display: flex;
+  }
+
+  .tag {
+    font-size: 10px;
+    padding: 4PX 4PX;
+    border-radius: 10%;
+    background-color: rgb(228, 204, 228);
+    color: #A061F7
+  }
+
+  .plus {
+    background-color: rgb(226, 226, 226);
+    color: gray;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 4PX 4PX;
+  }
+
+  .plus:hover {
+    cursor: pointer;
+    background-color: #8420cc;
+    /* Dark purple on hover */
+    color: white;
+    /* Changes text color to white when hovered */
+  }
+
+
+  .tool-text {
+    font-size: 14px;
+    /* Slightly larger font size */
+    color: gray;
+    pointer-events: none;
+  }
+
+  
+.mlg-hidden{
+  display: none;
 }
 
-.dis-img{
-  border-radius: 50%;
-  height: 160px;
-  width: 100%;
-}
 
-
-.dis-img {
-  border-radius: 50%;
-  height: 120px;
-  width: 130Px;
-  margin-top: 30px;
-}
-
-
-.hea{
-  margin-top: -3px;
-  margin-bottom: 20px;
-}
 
 }
