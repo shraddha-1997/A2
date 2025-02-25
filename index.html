@@ -122,12 +122,10 @@
     <div class="d-md-flex d-lg-flex"> <!-- Main div for content -->
 
         <!-- Button to toggle the side panel (visible only on mobile) -->
-        <button class="btn d-lg-none" id="toggleButton" type="button" style="width: 30px; height: 30px;"
-            data-bs-toggle="collapse" data-bs-target="#sidePanel" aria-expanded="false" aria-controls="sidePanel">
-            <img src="ham.png" alt="Menu" style="width: 30px; height: 30px;  border-radius: 5px;">
+        <button class="btn-bs d-lg-none" id="toggleButton" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidePanel" aria-expanded="false" aria-controls="sidePanel">
+            <img src="ham.png" alt="Menu" style="width: 30px; height: 30px; border-radius: 5px;">
         </button>
-
-
 
         <!-- Side Panel -->
         <div id="sidePanel" class="side-bar collapse d-lg-block dash" style="padding-left: 3px;">
@@ -249,7 +247,7 @@
 
             <div class="container row " style=" max-height:200px;">
                 <!-- ROW 1 -->
-                <div class="col-sm-12 col-md-12 col-lg-2 offset-md-3 offset-lg-0">
+                <div class="col-sm-12 col-md-12 col-lg-2 offset-md-0 offset-lg-0 d-flex justify-content-center">
                     <img class="dis-img" src="Group 171973@2x.png" alt="displayImg">
                 </div>
 
@@ -279,12 +277,14 @@
                                 <option value="8">Web Development</option>
                             </select>
                         </div>
-                      
+
                         <div class="col-md-12 col-sm-12 write" style="padding-top: 10px; position: relative;">
                             <label for="exampleInputEmail1" class="form-label">Description</label>
-                            <input type="email" class="form-control write" id="exampleInputEmail1" style="height: 70px;" aria-describedby="emailHelp" placeholder=" "> 
+                            <input type="email" class="form-control write" id="exampleInputEmail1" style="height: 70px;"
+                                aria-describedby="emailHelp" placeholder=" ">
                             <div class="tooltip-text">
-                                <a href="https://app.intimepro.io/app/main/dashboard" target="_blank">https://app.intimepro.io/app/main/dashboard</a><br>
+                                <a href="https://app.intimepro.io/app/main/dashboard"
+                                    target="_blank">https://app.intimepro.io/app/main/dashboard</a><br>
                                 ID: patrick.rivera@mail.com <br>
                                 Password: querty123
                             </div>
@@ -294,79 +294,472 @@
 
 
 
- <!-- row -->
- <div class="row mt-4">
-    <strong class="hea">Courses Added</strong>
-
-  
-
-    <div class="col-12 col-md-2 col-lg-3 " style="font-size: 16px;">
-      <label for="exampleInputEmail1" class="form-label write">Courses</label>
-    
-    </div>
-
-    
-
-    <div class="col-12 col-md-2 col-lg-5" style="font-size: 16px;">
-      <label for="exampleInputEmail1" class="form-label write">Skill Sets</label>
-   
-    </div>
-
-    <div class="col-12 col-md-2 col-lg-3" style="font-size: 16px;">
-      <label for="exampleInputEmail1" class="form-label write">Description</label>
-    
-    </div>
-
-    <div class="col-12 col-md-2 col-lg-1" style="font-size: 16px;">
-        <label for="exampleInputEmail1" class="form-label write">Action</label>
-      
-      </div>
-<!--  THRASH
-    <div class="col-12 col-md-1 col-lg-1">
-      <img src="trash.svg" alt="trash" style="height:26px; margin-top: 33px;">
-    </div> -->
-
-  </div>
-  <!-- END OF ROW -->
+                <!-- row 1  -->
+                <div class="row mt-4 mobile-hidden">
+                    <strong class="hea">Courses Added</strong>
 
 
 
+                    <div class="col-12 col-md-4 col-lg-3 label ">
+                        <label for="exampleInputEmail1" class="form-label write">Courses</label>
+
+                    </div>
+
+
+
+                    <div class="col-12 col-md-3 col-lg-4">
+                        <label for="exampleInputEmail1" class="form-label write">Skill Sets</label>
+
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <label for="exampleInputEmail1" class="form-label write">Description</label>
+
+                    </div>
+
+                    <div class="col-12 col-md-1 col-lg-1 ac">
+                        <label for="exampleInputEmail1" class="form-label write">Action</label>
+
+                    </div>
+                </div>
+                <!-- END OF ROW -->
+
+
+                <div class="row mt-4 mobile-hidden">
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div style="display: flex; align-items: center; margin-top: -23px;">
+                            <img src="web.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text mt-3">
+                                Web Development
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">80 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-3 col-lg-4 ">
+                        <span class="tag">HTML</span>
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JAVA</span>
+                        <span class="tag">BOOTSTRAP</span>
+                        <span class="tag">JAVASCRIPT</span>
+                        <span class="plus">+2</span>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4" style="font-size: 16px;">
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard"
+                                target="_blank">https://app.intimepro.io/app/main/dashboard</a><br>
+                            ID:adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-1 col-lg-1 ac">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- MOBILE VIEW ROW 1 AND 2 -->
+                <div class="row mt-4 mlg-hidden">
+                    <strong class="hea">Courses Added</strong>
+                </div>
+
+                <div class="row mt-4 mlg-hidden">
+                    <!-- Course Name -->
+                    <div class="col-12">
+                        <label for="exampleInputEmail1" class="form-label write">Courses</label>
+                        <div style="display: flex; align-items: center;">
+                            <img src="web.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text">
+                                Web Development
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">80 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Sets -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Skill Sets</label>
+                        <div>
+                            <span class="tag">HTML</span>
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVA</span>
+                            <span class="tag">BOOTSTRAP</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="plus">+2</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Description</label>
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard" target="_blank">
+                                https://app.intimepro.io/app/main/dashboard
+                            </a><br>
+                            ID: adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+                    </div>
+
+                    <!-- Action -->
+                    <div class="col-12 mt-3 text-center">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+                </div>
+
+                <!-- END OF ROW -->
+
+
+                <!-- ROW 2 MAIN FORR LARGE AND MOBILE -->
+
+
+                <div class="row mt-4 mobile-hidden">
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div style="display: flex; align-items: center; margin-top: -23px;">
+                            <img src="UI.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text mt-3">
+                                UI Development
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">85 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-3 col-lg-4 ">
+                        <span class="tag">HTML</span>
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JAVA</span>
+                        <span class="plus">+3</span>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4" style="font-size: 16px;">
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard"
+                                target="_blank">https://sample.edu/day</a><br>
+                            ID:adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-1 col-lg-1 ac">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- MOBILE VIEW ROW 1 AND 2 -->
+                <div class="row mt-4 mlg-hidden">
+                    <strong class="hea">Courses Added</strong>
+                </div>
+
+                <div class="row mt-4 mlg-hidden">
+                    <!-- Course Name -->
+                    <div class="col-12">
+                        <label for="exampleInputEmail1" class="form-label write">Courses</label>
+                        <div style="display: flex; align-items: center;">
+                            <img src="UI.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text">
+                                UI Development
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">85 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Sets -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Skill Sets</label>
+                        <div>
+                            <span class="tag">HTML</span>
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVA</span>
+                            <span class="plus">+3</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Description</label>
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard" target="_blank">
+                                https://sample.edu/day
+                            </a><br>
+                            ID: adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+                    </div>
+
+                    <!-- Action -->
+                    <div class="col-12 mt-3 text-center">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+                </div>
+
+                <!-- END OF ROW -->
+
+
+
+                <!-- ROW 3 MAIN FORR LARGE AND MOBILE -->
+
+
+                <div class="row mt-4 mobile-hidden">
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div style="display: flex; align-items: center; margin-top: -23px;">
+                            <img src="BI.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text mt-3">
+                                Power BI
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">65 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-3 col-lg-4 ">
+                        <span class="tag">HTML</span>
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JAVA</span>
+                        <span class="plus">+3</span>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4" style="font-size: 16px;">
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard"
+                                target="_blank">https://sample.org/head</a><br>
+                            ID:adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-1 col-lg-1 ac">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- MOBILE VIEW ROW 1 AND 2 -->
+                <div class="row mt-4 mlg-hidden">
+                    <strong class="hea">Courses Added</strong>
+                </div>
+
+                <div class="row mt-4 mlg-hidden">
+                    <!-- Course Name -->
+                    <div class="col-12">
+                        <label for="exampleInputEmail1" class="form-label write">Courses</label>
+                        <div style="display: flex; align-items: center;">
+                            <img src="BI.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text">
+                                Powe BI
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">65 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Sets -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Skill Sets</label>
+                        <div>
+                            <span class="tag">HTML</span>
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVA</span>
+                            <span class="plus">+3</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Description</label>
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard" target="_blank">
+                                https://sample.org/head
+                            </a><br>
+                            ID: adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+                    </div>
+
+                    <!-- Action -->
+                    <div class="col-12 mt-3 text-center">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+                </div>
+
+                <!-- END OF ROW -->
+
+
+
+
+
+                <!-- ROW 2 MAIN FORR LARGE AND MOBILE -->
+
+
+                <div class="row mt-4 mobile-hidden">
+
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div style="display: flex; align-items: center; margin-top: -23px;">
+                            <img src="DB.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text mt-3">
+                                Database
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">72 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-md-3 col-lg-4 ">
+                        <span class="tag">CSS</span>
+                        <span class="tag">JAVA</span>
+                        <span class="tag">BOOTSTRAP</span>
+                        <span class="tag">JAVASCRIPT</span>
+                        <span class="plus">+2</span>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-4" style="font-size: 16px;">
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard"
+                                target="_blank">https://sample.org/head</a><br>
+                            ID:adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-1 col-lg-1 ac">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- MOBILE VIEW ROW 1 AND 2 -->
+                <div class="row mt-4 mlg-hidden">
+                    <strong class="hea">Courses Added</strong>
+                </div>
+
+                <div class="row mt-4 mlg-hidden">
+                    <!-- Course Name -->
+                    <div class="col-12">
+                        <label for="exampleInputEmail1" class="form-label write">Courses</label>
+                        <div style="display: flex; align-items: center;">
+                            <img src="DB.png" alt="img" class="cor" style="margin-right: 10px;">
+                            <div class="text">
+                                Database
+                                <p class="duration" style="font-size: 12px; color: grey; margin-top: 7px;">
+                                    Duration: <i class="fa-solid fa-stopwatch"></i>
+                                    <a href="#" style="color: blue;">72 Hrs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Sets -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Skill Sets</label>
+                        <div>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JAVA</span>
+                            <span class="tag">BOOTSTRAP</span>
+                            <span class="tag">JAVASCRIPT</span>
+                            <span class="plus">+2</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label write">Description</label>
+                        <div class="tool-text">
+                            <a href="https://app.intimepro.io/app/main/dashboard" target="_blank">
+                                https://sample.org/head
+                            </a><br>
+                            ID: adam.murphy@mail.com <br>
+                            Password: querty123
+                        </div>
+                    </div>
+
+                    <!-- Action -->
+                    <div class="col-12 mt-3 text-center">
+                        <img src="trash.svg" alt="trash" style="height:16px; margin-top: 23px;">
+                    </div>
+                </div>
+
+                <!-- END OF ROW -->
 
 
 
 
 
 
-
-
-
-
-
-
-           </div>    <!--   MAIN ROW CONTAINER END DIV -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end item" style="margin-top: 82px;">
+                        <!-- <li class="page-item"><a class="page-link" style="border-radius:50% ;" href="#"><</a></li> -->
+                        <li class="page-item"><a class="page-link"style="border-radius:50% ;" href="#"><</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">-</a></li>
+                        <li class="page-item"><a class="page-link" href="#">90</a></li>
+                        <li class="page-item"><a class="page-link"style="border-radius:50% ;" href="#">></a></li>
+                        <!-- <li class="page-item"><a class="page-link" style="border-radius:50% ;" href="#">></a></li> -->
+                    </ul>
+                </nav>
+            </div> <!--   MAIN ROW CONTAINER END DIV -->
 
         </div> <!--main div end -->
 
